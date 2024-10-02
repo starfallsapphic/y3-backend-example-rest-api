@@ -92,7 +92,8 @@ class ProductController extends BaseController
         }
 
         $product->name = $input['name'];
-        $product->detail = $input['detail'];
+        $product->description = $input['description'];
+        $product->price = $input['price'];
         $product->save();
 
         return $this->sendResponse(
